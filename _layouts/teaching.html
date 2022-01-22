@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+	
+    <div class="index-block" style = "background-color:rgba(0, 0, 0, 0.1);">
+      <div class="wrapper-page">
+		<div class="container">
+			<div class="column-4">
+				<p>
+					Courses I taught
+				</p>
+			</div>
+		</div>	
+		<div class="container">
+			<div class="column-text-6">
+				<ul class="text-list">
+					<li class="list-dist">
+						<span class="list-item">Web Scraping and APIs, International Program in Survey and Data Science (University of Mannheim and University of Maryland) &#8211; 2021</span>
+					</li>	
+					<li class="list-dist">
+						<span class="list-item">Web Data Collection with R, University of Konstanz &#8211; 2020 <b>&rarr;</b> <a href = "https://github.com/saschagobel/teaching#web-data-collection-with-r" target="_blank" rel="noopener noreferrer">materials</a></span>
+					</li>	
+					<li class="list-dist">
+						<span class="list-item">Multilevel Modeling (Frequentist and Bayesian), University of Konstanz &#8211; 2018 (with Peter Selb), 2019 (with Susumu Shikano) <b>&rarr;</b> <a href = "https://github.com/saschagobel/teaching#multilevel-modeling-frequentist-and-bayesian" target="_blank" rel="noopener noreferrer">materials</a></span>
+					</li>					
+				</ul>
+			</div>
+		</div>			
+	  </div>
+	</div>
+    {%- include footer.html -%}
+	<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+	</script>
+
+  </body>
+
+</html>

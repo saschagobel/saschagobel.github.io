@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+	
+    <div class="index-block" style = "background-color:rgba(0, 0, 0, 0.1);">
+      <div class="wrapper-page">
+	  	<div class="container">
+			<div class="column-4">
+				<p>
+					CV [<a href = "/images/cv-goebel-january-2022.pdf" target="_blank" rel="noopener noreferrer">PDF</a>]
+				</p>
+			</div>
+		</div>	
+	  	<div class="container">
+			<div class="column-cv">
+				<img src="/images/cv-1.jpg"
+							style="object-fit:contain;
+							object-position: center;
+							width: 900px;">
+			</div>			
+		</div>
+		<div class="container">
+			<div class="column-cv">
+				<img src="/images/cv-2.jpg"
+							style="object-fit:contain;
+							object-position: center;
+							width: 900px;">
+			</div>			
+		</div>
+		<div class="container">
+			<div class="column-cv">
+				<img src="/images/cv-3.jpg"
+							style="object-fit:contain;
+							object-position: center;
+							width: 900px;">
+			</div>			
+		</div>
+	  </div>
+	</div>
+    {%- include footer.html -%}
+	<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+	</script>
+
+  </body>
+
+</html>

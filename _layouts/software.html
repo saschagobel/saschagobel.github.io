@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+	
+    <div class="index-block" style = "background-color:rgba(0, 0, 0, 0.1);">
+      <div class="wrapper-page">
+		<div class="container">
+			<div class="column-4">
+				<p>
+					Software
+				</p>
+			</div>
+		</div>	
+		<div class="container">
+			<div class="column-text-4">
+				<ul class="text-list">
+					<li class="list-dist">
+						<span class="list-item"><a href = "https://github.com/saschagobel/legislatoR" target="_blank" rel="noopener noreferrer">legislatoR</a>: R Interface to the Comparative Legislators Database (with Simon Munzert)</span>
+					</li>
+					<li class="list-dist">
+						<span class="list-item"><a href = "https://github.com/saschagobel/degurba-postcode-areas" target="_blank" rel="noopener noreferrer">R code</a> for applying the Degree of Urbanisation classification scheme to postcode areas.</span>
+					</li>					
+				</ul>
+			</div>
+		</div>			
+		<div class="container">
+			<div class="column-4">
+				<p>
+					Data
+				</p>
+			</div>
+		</div>	
+		<div class="container">
+			<div class="column-text-5">
+				<ul class="text-list">
+					<li class="list-dist">
+						<span class="list-item"><a href = "https://github.com/saschagobel/bjpols-comparative-legislators-database" target="_blank" rel="noopener noreferrer">Replication materials</a> for the paper "The Comparative Legislators Database"</span>
+					</li>
+					<li class="list-dist">
+						<span class="list-item"><a href = "https://github.com/saschagobel/jqd-voting-and-sm-pol-participation" target="_blank" rel="noopener noreferrer">Replication materials</a> for the paper "Voting and Social Media-Based Political Participation" and <a href = "https://github.com/saschagobel/jqd-voting-and-sm-pol-participation#acquiring-detailed-data-for-replication-or-collaboration-purposes" target="_blank" rel="noopener noreferrer">Information</a> on gaining access to linked voter record and Twitter data.</span>
+					</li>	
+					<li class="list-dist">
+						<span class="list-item"><a href = "https://github.com/saschagobel/poq-how-to-poll-runoff-elections" target="_blank" rel="noopener noreferrer">Replication materials</a> for the paper "How to Poll Runoff Elections" and <a href = "https://github.com/saschagobel/poq-how-to-poll-runoff-elections/tree/master/data/exit-poll-data-corrected" target="_blank" rel="noopener noreferrer">2017 French presidential election first-round exit poll data (.rds files)</a>.</span>
+					</li>					
+					<li class="list-dist">
+						<span class="list-item"><a href = "https://github.com/saschagobel/sscr-political-advertising-wikipedia" target="_blank" rel="noopener noreferrer">Replication materials</a> for the paper "Political Advertising on the Wikipedia Marketplace of Information" as well as <a href = "https://github.com/saschagobel/sscr-political-advertising-wikipedia/tree/master/data" target="_blank" rel="noopener noreferrer">edit and traffic data for German MPs' Wikipedia entries</a>.</span>
+					</li>						
+				</ul>
+			</div>
+		</div>	
+	  </div>
+	</div>
+    {%- include footer.html -%}
+	<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+	</script>
+
+  </body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+	
+    <div class="index-block" style = "background-color:rgba(0, 0, 0, 0.1);">
+      <div class="wrapper-page">
+		<div class="container">
+			<div class="column-4">
+				<p>
+					Publications
+				</p>
+			</div>
+		</div>	
+		<div class="container">
+			<div class="column-text-2">
+				<ul class="text-list">
+					<li class="list-dist">
+						<span class="list-item">Göbel, Sascha and Simon Munzert. Forthcoming. <a href = "https://doi.org/10.1017/S0007123420000897" target="_blank" rel="noopener noreferrer">"The Comparative Legislators Database."</a><strong><em> British Journal of Political Science</em></strong>.</span>
+					</li>
+					<li class="list-dist">
+						<span class="list-item">Göbel, Sascha. 2021. <a href = "https://doi.org/10.51685/jqd.2021.021" target="_blank" rel="noopener noreferrer">"Voting and Social Media-Based Political Participation."</a><strong><em> Journal of Quantitative Description: Digital Media</em></strong> 1: 1&#8211;94.</span>
+					</li>
+					<li class="list-dist">
+						<span class="list-item">Selb, Peter, Sascha Göbel, and Romain Lachat. 2020. <a href = "https://doi.org/10.1093/poq/nfaa039" target="_blank" rel="noopener noreferrer">"How to Poll Runoff Elections."</a><strong><em> Public Opinion Quarterly</em></strong> 84(3): 776&#8211;787.</span>
+					</li>
+					<li class="list-dist">
+						<span class="list-item">Göbel, Sascha and Simon Munzert. 2018. <a href = "https://doi.org/10.1177/0894439317703579" target="_blank" rel="noopener noreferrer">"Political Advertising on the Wikipedia Marketplace of Information."</a><strong><em> Social Science Computer Review</em></strong> 36(2): 157&#8211;175.</span>
+					</li>
+					<li class="list-dist">
+						<span class="list-item">Wonka, Arndt and Sascha Göbel. 2016. <a href = "https://doi.org/10.1057/cep.2015.43" target="_blank" rel="noopener noreferrer">"Parliamentary Scrutiny and Partisan Conflict in the Euro Crisis. The Case of the German Bundestag."</a><strong><em> Comparative European Politics</em></strong> 14(2): 215&#8211;231.</span>
+					</li>
+				</ul>
+			</div>
+		</div>			
+		<div class="container">
+			<div class="column-4">
+				<p>
+					Work in Progress
+				</p>
+			</div>
+		</div>
+		<div class="container">
+			<div class="column-text-3">
+				<ul class="text-list">
+					<li class="list-dist">
+						<span class="list-item">"Does Communication Signal Voter Preferences and Participation?" with Simon Roth</span>
+					</li>
+					<li class="list-dist">
+						<span class="list-item">"Public Opinion Polarization Across Rural-Urban Europe" with Richard Traunmüller</span>
+					</li>
+					<li class="list-dist">
+						<span class="list-item">"Does Online Hate Speech Regulation Work? Evidence from the German Network Enforcement Act" with Friederike Quint and Richard Traunmüller</span>
+					</li>
+					<li class="list-dist">
+						<span class="list-item">"A Closer Look at Voters’ Engagement with Untrustworthy News Websites on Twitter" with Philipp M. Lutscher</span>
+					</li>
+					<li class="list-dist">
+						<span class="list-item">"Using Structural Topic Modeling to Identify Substantive Differences Between Voters and Nonvoters"</span>
+					</li>
+					<li class="list-dist">
+						<span class="list-item">"Geographic Patterns of Online Media Diets" with Eunji Kim and Simon Munzert</span>
+					</li>
+					<li class="list-dist">
+						<span class="list-item">"Political Predictors of Misclassification in Rural-Urban Self-identification" with Enrique Hernández and Guillem Rico</span>
+					</li>
+					<li class="list-dist">
+						<span class="list-item">"Rural-Urban Disparities in Political Science Research. A Systematic Review" with Antonia Lang</span>
+					</li>
+				</ul>
+			</div>
+		</div>		
+	  </div>
+	</div>
+    {%- include footer.html -%}
+	<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+	</script>
+
+  </body>
+
+</html>

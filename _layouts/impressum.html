@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+	
+    <div class="index-block" style = "background-color:rgba(0, 0, 0, 0.1);">
+      <div class="wrapper-page">
+		<div class="container">
+			<div class="column-4">
+				<p>
+					Impressum
+				</p>
+			</div>
+		</div>	
+		<div class="container">
+			<div class="column-text-3">
+				<h3>Angaben gemäß §5 TMG:</h3>	
+				<p>
+				Sascha Göbel<br>
+				Goethe Universität Frankfurt a.M.<br>
+				Theodor-W.-Adorno-Platz 6 <br>
+				60323 Frankfurt am Main
+				</p>
+				<p>
+				Tel.: +49 (0)69 798 36621<br>
+				sascha.goebel@soz.uni-frankfurt.de
+				</p>
+				<h3>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV::</h3>	
+				<p>
+				Sascha Göbel<br>
+				Goethe Universität Frankfurt a.M.<br>
+				Theodor-W.-Adorno-Platz 6 <br>
+				60323 Frankfurt am Main
+				</p>
+			</div>
+		</div>			
+	  </div>
+	</div>
+    {%- include footer.html -%}
+	<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+	</script>
+
+  </body>
+
+</html>
